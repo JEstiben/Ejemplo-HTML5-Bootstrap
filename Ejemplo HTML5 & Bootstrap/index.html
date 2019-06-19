@@ -24,29 +24,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#section1">Ejemplo de section 1</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#section2">Ejemplo de section 2</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link disabled" href="#footer">Footer</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item"><a href="#">Página 1</a></li>
+		  <li class="breadcrumb-item"><a href="#">Página 2</a></li>
+		  <li class="breadcrumb-item active">Página 3</li>
+		</ol>
         <div class="container">
 	        <section id="carouselEjemplo">
-	        	<h5>Ejemplo de la etiqueta section de HTML5</h5>
 	        	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 	                <ol class="carousel-indicators">
 	                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -84,7 +87,7 @@
 	            </div>
 	        </section>
 	        </br>
-            <section class="main row">
+            <section id="section1" class="main row">
             	<h5>Ejemplo de la etiqueta section de HTML5</h5>
                 <article class="col-xs-12  col-sm-8 col-md-9 col-lg-9">
 
@@ -205,11 +208,12 @@
                 </aside>
             </section>
         	</br>
-        	<section>
+        	<section id="section2">
         		<h5>Ejemplo de la etiqueta section de HTML5</h5>
 	            <div class="row">
 	                <div class="color1 col-xs-12 col-sm-6 col-md-3">
 	                	<h5>Ejemplo texto de Bootstrap</h5>
+						</br></br>
 	                    <div class="row">
 	                        <div class="col-8 col-sm-6">
 	                            <p class="text-lowercase">LOWERCASE</p>
@@ -235,7 +239,15 @@
 	                    </div>
 	                </div>
 	                <div class="col-xs-12 color1 col-sm-6 col-md-3"> 
-	                    <h5>Ejemplo de las etiquetas video y audio de HTML5</h5>
+	                    <h5>Ejemplo etiqueta video HTML5</h5>
+						<video controls>
+							<source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+						</video>
+						</br></br></br></br>
+						<h5>Ejemplo etiqueta audio de HTML5</h5>
+						<audio controls>
+							<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+						</audio>
 	                </div>
 	                <div class=" col-xs-12 col-sm-6 col-md-3">
 	                	<h5>Ejemplo barras de Bootstrap</h5>
@@ -275,7 +287,7 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer id="footer">
             <div class="container">
                 <h3>Ejemplo de la etiqueta Footer de HTML5</h3>
             </div>		
