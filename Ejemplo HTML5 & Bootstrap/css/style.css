@@ -31,3 +31,12 @@ footer{
   padding: 3em 0 3em 0;
   text-align: center;
 }
+
+video{
+	width: 255px;
+	height: 190px;
+}
+
+audio{
+	width: 255px;
+}
