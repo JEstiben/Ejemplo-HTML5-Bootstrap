@@ -21,4 +21,4 @@ var idIterval1 = setInterval(function(){
   if(progreso1 == 100){
     progreso1=0;
   }
-},2000);
+},1000);
