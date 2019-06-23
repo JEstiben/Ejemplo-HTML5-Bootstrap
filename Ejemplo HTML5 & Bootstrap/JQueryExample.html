@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$("#button1").click(function(){
+				//$("#div1").load("texto.html");
+				$("#div1").load("index.html");
+			});
+ 
+		});
+
+		function useAjax(nombre){
+
+			$.ajax(
+				{
+					url: "ajax.php",
+					type: 'POST',
+					data: {"nombre": nombre},
+					error: function(){
+						alert("Error");
+					},
+					success: function(responce){
+						alert(responce);
+					}
+				}
+			);
+
+		}
+	</script>
+	
+	</head>
+	
+	<body>
+
+		<div id="div1"><h2>Texto Original</h2></div>
+
+		<button id="button1">Cargar datos con AJAX</button>
+
+		<br><br>
+
+		<label>Ingrese su nombre: </label>
+		<input type="text" name="nombre" id="nombre">
+
+		<input type="button" name="enviar" id="enviar" href="javascript:;" onclick="useAjax($('#nombre').val());return false;" value="Saludar">
+
+	</body>
+
+</html>
